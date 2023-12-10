@@ -1,0 +1,59 @@
+def ecry():
+    array=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k','l', 'm', 'n', 'o','p','q','r','s','t','u','v','w','x','y','z']    
+    alpha=[]
+    z=1
+    key=4
+    for i in range(len(array)):
+        alpha.append((array[i],z))
+        z+=1
+    #Creating hehe
+    a=input("Enter message:")
+    add=[]
+    final=[]
+    result=[]
+    for char in a:
+        for i in range(len(alpha)):
+            if alpha[i][0] == char:
+                add.append(alpha[i][1])
+    for i in range(len(add)):
+        final.append((add[i]+key)%26)
+    for i in range(len(final)):
+        for j in range(len(alpha)):
+            if final[i]==alpha[j][1]:
+                result.append(alpha[j][0])
+    print("Your Encripted message is","".join(result),"\n and your key is ",key)
+#deveyrvwivdisa
+def dcry():
+    array=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k','l', 'm', 'n', 'o','p','q','r','s','t','u','v','w','x','y','z']    
+    alpha=[]
+    z=1
+    for i in range(len(array)):
+        alpha.append((array[i],z))
+        z+=1
+    #Creating hehe
+    a=input("Enter message:")
+    key=int(input("Enter Key value:"))
+    add=[]
+    final=[]
+    result=[]
+    for char in a:
+        for i in range(len(alpha)):
+            if alpha[i][0] == char:
+                add.append(alpha[i][1])
+    for i in range(len(add)):
+        final.append((add[i]-key)%26)
+    for i in range(len(final)):
+        for j in range(len(alpha)):
+            if final[i]==alpha[j][1]:
+                result.append(alpha[j][0])
+    print("Your dycripted message is","".join(result),"\n and your key is ",key)
+
+#driver command line
+
+print("Welcome to Gandhu Encription and Dycription:")
+i=int(input("Enter 1 for Encryption 2 for Decryption: "))
+if i ==1:
+    ecry()
+elif i == 2:
+    dcry()
+    
