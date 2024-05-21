@@ -1,1 +1,48 @@
+Secure File Transfer System
 
+Overview
+
+This project implements a secure file transfer system between two users, ensuring confidentiality, authenticity, and integrity of the transferred data. The system utilizes encryption and hashing techniques to protect the data and verify its integrity upon receipt.
+
+Features
+
+Secure Channel: Establishes a secure connection between two users for file transfer.
+Confidentiality: Encrypts the file content to prevent unauthorized access during transmission.
+Authenticity: Ensures that the data is sent and received by the intended users.
+Integrity: Uses hashing to verify that the received message is identical to the sent message, detecting any tampering or corruption during transmission.
+How It Works
+
+Client Side:
+
+Encrypts the file content using a custom encryption algorithm.
+Computes a hash of the original file content.
+Sends both the encrypted content and the hash to the server over a socket connection.
+Server Side:
+
+Receives the encrypted content and the hash from the client.
+Decrypts the received content.
+Computes a hash of the decrypted content.
+Compares the computed hash with the received hash to verify integrity.
+Saves the decrypted content to a file if the hashes match, ensuring the received content is authentic and unaltered.
+Usage
+
+Server
+Run the server script to start listening for incoming connections and process the received files.
+
+python
+Copy code
+python server.py
+Client
+Run the client script to send a file to the server securely.
+
+python
+Copy code
+python client.py
+Gradio Interface
+Both the client and server provide a Gradio interface for easy interaction and testing. Launch the interface using the provided scripts.
+
+Requirements
+
+Python 3.x
+Gradio
+Socket programming
