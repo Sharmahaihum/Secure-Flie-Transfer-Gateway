@@ -23,13 +23,17 @@ Socket programming
 ## Screenshots
 
 Reciever side
-![App Screenshot](https://drive.google.com/file/d/1R80I508HZK2mrQ5tZh41OyWDLnt3nXJc/view?usp=share_link)
+<img width="1327" alt="Screenshot 2024-05-21 at 8 42 56 PM" src="https://github.com/Sharmahaihum/Secure-Flie-Transfer-Gateway/assets/108683688/2a6f6c5b-836c-4c01-9f78-cd1e1d973698">
+
 Reciever Connection
-![App Screenshot](https://drive.google.com/file/d/15VLctavbc4rQ-O_lNbBdBUGl0cY9camL/view?usp=share_link)
+<img width="1324" alt="Screenshot 2024-05-21 at 8 43 07 PM" src="https://github.com/Sharmahaihum/Secure-Flie-Transfer-Gateway/assets/108683688/5f42b1f5-3db4-44ad-9653-ab716ac63f0b">
+
 Sender Sends Data
-![App Screenshot](https://drive.google.com/file/d/1MsfSyk-jaCk-eAYYLtBD9KEw2Zm12ULv/view?usp=share_link)
+<img width="1330" alt="Screenshot 2024-05-21 at 8 43 29 PM" src="https://github.com/Sharmahaihum/Secure-Flie-Transfer-Gateway/assets/108683688/46221497-84cd-4cd0-9587-6826c0dfbcfa">
+
 Reciever recieves the data with Hash Verification (True or False)
-![App Screenshot](https://drive.google.com/file/d/11o-QtdW-XNUYptk6iZoRnaHfhYHJsTEN/view?usp=share_link)
+<img width="1324" alt="Screenshot 2024-05-21 at 8 43 51 PM" src="https://github.com/Sharmahaihum/Secure-Flie-Transfer-Gateway/assets/108683688/0f6e9d90-bd90-4438-a28b-840f10caf9d6">
+
 
 ## Authors
 
