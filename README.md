@@ -25,7 +25,7 @@ Socket programming
 Reciever side
 <img width="1327" alt="Screenshot 2024-05-21 at 8 42 56 PM" src="https://github.com/Sharmahaihum/Secure-Flie-Transfer-Gateway/assets/108683688/2a6f6c5b-836c-4c01-9f78-cd1e1d973698">
 
-Reciever Connection
+Connection Established
 <img width="1324" alt="Screenshot 2024-05-21 at 8 43 07 PM" src="https://github.com/Sharmahaihum/Secure-Flie-Transfer-Gateway/assets/108683688/5f42b1f5-3db4-44ad-9653-ab716ac63f0b">
 
 Sender Sends Data
