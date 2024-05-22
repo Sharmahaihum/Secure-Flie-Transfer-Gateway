@@ -7,6 +7,7 @@ def start_client(plaintext,hash):
     HOST = '127.0.0.1'
     PORT = 12345
     data_array=[plaintext,hash]
+    print(plaintext)
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((HOST, PORT))
     data_json = json.dumps(data_array)
