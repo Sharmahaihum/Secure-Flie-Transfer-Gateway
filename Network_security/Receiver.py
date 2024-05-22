@@ -32,20 +32,21 @@ def verify_hash(data):
     return md
 
 def dcry(data1):
-    array = 'abcdefghijklmnopqrstuvwxyz'
+    array = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     alpha = {char: idx for idx, char in enumerate(array, start=1)}
     key = 7
-    decrypted_words = []
+    decrypted_sentence = []
     for word in data1.split():
-        decrypted_word = []
+        encrypted_word = []
         for char in word:
             if char.isalpha():
-                decrypted_char = (alpha[char] - key) % 26
-                decrypted_word.append(array[decrypted_char - 1])
+                char_lower = char.lower()
+                encrypted_char = (alpha[char_lower] - key) % 26
+                encrypted_word.append(array[encrypted_char - 1].upper() if char.isupper() else array[encrypted_char - 1])
             else:
-                decrypted_word.append(char)
-        decrypted_words.append("".join(decrypted_word))
-    decrypted_sentence = " ".join(decrypted_words)
+                encrypted_word.append(char)
+        decrypted_sentence.append("".join(encrypted_word))
+    decrypted_sentence = " ".join(decrypted_sentence)
     return decrypted_sentence
 
 def xor_encrypt(inputs):
